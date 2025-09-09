@@ -2,7 +2,7 @@
 pragma solidity ^0.8.20;
 
 import "forge-std/Script.sol";
-import "./contracts/PolicyStorage.sol";
+import "../src/PolicyStorage.sol";
 
 contract StorePolicy is Script {
     function run() external {
@@ -14,7 +14,7 @@ contract StorePolicy is Script {
         PolicyStorage policyStorage = PolicyStorage(policyStorageAddr);
 
         // Example policy
-        string memory policyId = "POLICY-001";
+        bytes32 policyId = keccak256(abi.encodePacked("POLICY-001"));
         string memory policyHash = "0xabc123hash";
 
         policyStorage.storePolicy(policyId, policyHash);
