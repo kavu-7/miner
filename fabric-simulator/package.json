@@ -1,0 +1,18 @@
+{
+  "name": "healthinsurechain-fabric-simulator",
+  "version": "1.0.0",
+  "description": "Minimalistic Fabric simulator for Hospital-Insurance data sharing",
+  "main": "fabric-simulator.js",
+  "scripts": {
+    "start": "node fabric-simulator.js",
+    "test": "node test-fabric.js"
+  },
+  "keywords": ["fabric", "healthcare", "insurance", "blockchain"],
+  "author": "HealthInsureChain Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.0"
+  }
+}
